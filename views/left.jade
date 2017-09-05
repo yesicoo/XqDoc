@@ -1,0 +1,56 @@
+//
+   Created by XuQing on 2017/9/4.
+
+ul.tree
+    li
+        a.active(href='#') 首页
+    li
+        a(href='#') 接口列表
+        ul
+            li
+                a(href='#') LittleBoy
+                ul
+                    li
+                        a(href='#') 账户
+                        ul
+                            li
+                                a(href='#') 登录
+                            li
+                                a(href='#') 验证Token
+                    li
+                        a(href='#') 门店
+            li
+                a(href='#') 企业微信
+                ul
+                    li
+                        a(href='#') 发送短信验证
+                    li
+                        a(href='#') 绑定
+                    li
+                        a(href='#') 获取门店列表
+            li
+                a(href='#suits') 公共接口
+                ul
+                    li
+                        a(href='#') 检查更新
+                    li
+                        a(href='#') 验证码验证
+    li
+        a(href='#') 字典
+        ul
+            li
+                a(href='#') 错误码
+            li
+                a(href='#') 门店数据表
+                ul
+                    li
+                        a(href='#jobs1') table 1
+                    li
+                        a(href='#jobs2') table 2
+                    li
+                        a(href='#jobs3') table 3
+script.
+    $(function () {
+        $(".tree").treemenu({delay: 100}).openActive();
+    });
+

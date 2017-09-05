@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title= title
+
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='http://www.jq22.com/demo/jquery-treemenu20160517/jquery-1.11.2.min.js')
+    script(src='/javascripts/jquery.treemenu.js')
+
+  body
+    div.header Xq.Doc
+    div.left
+      include left.jade
+    div.right
+      block content
+

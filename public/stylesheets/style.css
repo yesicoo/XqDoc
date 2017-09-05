@@ -1,0 +1,71 @@
+body {
+padding: 0px;
+    margin: 0px;
+}
+html,body{height:100%}
+a {
+  color: #00B7FF;
+}
+
+.header{
+    height: 40px;
+    background-color: darkcyan;
+    color: white;
+    font-size: x-large;
+    padding: 5px 10px;
+}
+.left{
+    display:inline-block;
+    width: 400px;
+    border-right: solid 1px #33CCCC;
+    height:calc(100% - 50px);
+}
+.right{
+    display:inline-block;
+    width: calc(100% - 505px);
+vertical-align: top;
+}
+
+
+.treemenu li { list-style: none; }
+
+.treemenu .toggler {
+    cursor: pointer;
+}
+
+.treemenu .toggler:before {
+    display: inline-block;
+    margin-right: 2pt;
+}
+
+li.tree-empty > .toggler { color: #aaa; }
+li.tree-empty > .toggler:before { content: "-"; }
+li.tree-closed > .toggler:before { content: "+"; }
+li.tree-opened > .toggler:before { content: "-"; }
+
+.tree {
+    width:800px;
+    color: darkcyan;
+    padding-left: 3px;
+}
+.tree li,
+.tree li > a{
+    padding: 4pt;
+
+}
+
+.tree li a {
+
+    text-decoration: none;
+    line-height: 20pt;
+    border-radius: 4px;
+    color: darkcyan;
+}
+
+.active a {
+    color: #fff;
+}
+
+
+
+
